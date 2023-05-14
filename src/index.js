@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(rootEl);
 function App() {
 
   let message = "Default Message";
-
+  // computation for updating message
   if (Math.random() > 0.5) {
     message = "Updated Message";
   }

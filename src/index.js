@@ -13,14 +13,22 @@ const root = ReactDOM.createRoot(rootEl);
 // 4) Create a component
 function App() {
 
-  // Converting HTML to JSX
-  // Names and values of attributes that you provide to elements in HTML are slightly different when writing JSX
+  // Rules for converting HTML to JSX
+  // All prop names foloow camelCase capitalization
+  // Number attributes use curly braces
+  // Booleans of 'true can be written with just the property name
+  // The 'class' attribute is written as 'className'
+  // In-line styles are provided as objects
   return (
-    // HTML Way of writing attributes
-    // <textarea autofocus = {true}/>>
-
-    // JSX way of writing attributes
-    <textarea autoFocus={true} />
+    <div className="wrapper">
+      <textarea
+        // readOnly is set true so directly writing property name
+        readOnly
+        maxLength={3}
+        spellCheck={false}
+        style={{ backgroundColor: "gray" }}
+      />
+    </div>
   )
 }
 

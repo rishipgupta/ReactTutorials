@@ -14,7 +14,7 @@ const data = [
     description: "Personal assistant by Microsoft"
   },
   {
-    id: 1,
+    id: 3,
     imageSrc: "../images/siri.png",
     title: "Siri",
     twitterProfile: "@siri44",

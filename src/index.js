@@ -12,11 +12,15 @@ const root = ReactDOM.createRoot(rootEl);
 
 // 4) Create a component
 function App() {
-  const inputType = "number";
 
-  // Customizing input using props
+  // Converting HTML to JSX
+  // Names and values of attributes that you provide to elements in HTML are slightly different when writing JSX
   return (
-    <input type={inputType} min={5} style={{ border: "3px solid red" }} />
+    // HTML Way of writing attributes
+    // <textarea autofocus = {true}/>>
+
+    // JSX way of writing attributes
+    <textarea autoFocus={true} />
   )
 }
 

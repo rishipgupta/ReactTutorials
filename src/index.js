@@ -12,14 +12,11 @@ const root = ReactDOM.createRoot(rootEl);
 
 // 4) Create a component
 function App() {
+  const inputType = "number";
 
-  let message = "Default Message";
-  // computation for updating message
-  if (Math.random() > 0.5) {
-    message = "Updated Message";
-  }
+  // Customizing input using props
   return (
-    <h1>{message}</h1>
+    <input type={inputType} min={5} style={{ border: "3px solid red" }} />
   )
 }
 
